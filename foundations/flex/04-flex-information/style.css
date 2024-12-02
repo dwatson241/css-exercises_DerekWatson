@@ -8,8 +8,12 @@ img {
 }
 
 .title {
+  display: flex;
   font-size: 36px;
   font-weight: 900;
+  justify-content: center;
+  margin: 32px;
+
 }
 
 /* do not edit this footer */
@@ -23,4 +27,47 @@ img {
   align-items: center;
   justify-content: center;
   background: #eee;
+}
+
+.barberry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin-right: 52px;
+}
+
+.chili {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin-right: 52px;
+}
+
+
+.pepper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin-right: 52px;
+}
+
+.saffron {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.species {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.text {
+  margin-top: 16px;
 }
