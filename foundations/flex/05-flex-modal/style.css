@@ -16,38 +16,41 @@ body {
 }
 
 .modal {
+  gap: 16px;
+  justify-items: center;
+  padding: 24px;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
 
-.icon {
-  color: royalblue;
-  font-size: 26px;
-  font-weight: 700;
-  background: lavender;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
+.item {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
 }
 
-.close-button {
-  background: #eee;
-  border-radius: 50%;
-  color: #888;
-  font-weight: 400;
-  font-size: 16px;
-  height: 24px;
-  width: 24px;
+.header {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #eee;
-  padding: 0;
+  text-align: left;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.header-close {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.button-container {
+  display: flex;
+  gap: 8px;
 }
 
 button {
@@ -67,3 +70,39 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: royalblue;
+  font-size: 26px;
+  font-weight: 700;
+  background: lavender;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.close-button {
+  background: #eee;
+  border-radius: 50%;
+  color: #888;
+  font-weight: 400;
+  font-size: 16px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  padding: 0;
+}
+
